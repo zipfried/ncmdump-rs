@@ -1,0 +1,19 @@
+[package]
+name = "ncmdump-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes = "0.8.2"
+base64 = "0.20.0"
+cipher = { version = "0.4.3", features = ["alloc", "block-padding"] }
+
+serde = { version = "1.0.151", features = ["derive"] }
+serde_json = "1.0.89"
+
+clap = { version = "4.0.29", features = ["derive"] }
+
+anyhow = "1.0.66"
+thiserror = "1.0.37"
